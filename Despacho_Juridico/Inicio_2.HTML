@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bienvenido</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita desplazamiento horizontal si el contenido sobrepasa el ancho */
+  }
+  .sidebar {
+    background-color: #000080; /* Azul oscuro */
+    color: white;
+    padding: 15px;
+    height: 100vh; /* Para que tome toda la altura de la pantalla */
+    width: 250px; /* Ancho del sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    position: fixed; /* Fijo en la pantalla */
+    font-size: 20px;
+  }
+  .sidebar h2 {
+    text-align: center; /* Centra el título horizontalmente */
+    margin-bottom: 20px;
+  }
+  .btn {
+    display: block;
+    background: none;
+    color: white;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center; /* Centra el texto del botón */
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 50px; /* Espacio entre botones */
+    font-size: 20px;
+  }
+  /*.btn:hover {
+    background-color: #013567; /* Azul más claro al pasar el mouse */
+  
+    .main-content {
+        margin-left: 250px; /* Ajuste según el ancho del sidebar */
+        padding: 20px;
+        display: flex; /* Establece el contenedor principal como un contenedor flex */
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center; /* Centra los elementos verticalmente */
+        height: calc(100vh - 40px); /* Altura total de la ventana menos el padding */
+        overflow: hidden; /* Evita desbordamiento de contenido */
+      }
+      .main-image {
+        max-width: 50%; /* Máximo 50% del ancho del contenedor */
+        max-height: 80%; /* Máximo 80% de la altura del contenedor */
+        height: auto; /* Mantiene la relación de aspecto */
+        border-radius: 10px; /* Opcional: bordes redondeados para la imagen */
+      }
+  
+</style>
+<script>
+  function redireccionar(page) {
+    window.location.href = page;
+  }
+
+  function mostrarMensaje(mensaje) {
+    alert(mensaje);
+  }
+
+  function cerrarSesion(page) {
+    window.location.href = page;
+  }
+</script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menú</h2>
+    <button class="btn" onclick="redireccionar('Login.html')">Mensajes Formularios</button>
+    <button class="btn" onclick="mostrarMensaje('Directorio de Clientes')">Directorio de Clientes</button>
+    <button class="btn" onclick="mostrarMensaje('Tribunales')">Tribunales</button>
+    <button class="btn" onclick="mostrarMensaje('Consultas')">Consultas</button>
+    <button class="btn" onclick="mostrarMensaje('Opciones')">Opciones</button>
+    <button class="btn" onclick="cerrarSesion('Login_2.html')">Cerrar Sesión</button>
+  </div>
+  <div class="main-content">
+    <!-- Contenido principal aquí -->
+    <img src="IMG/Logo.jpg" alt="Descripción de la imagen" class="main-image">
+  </div>
+</body>
+</html>
