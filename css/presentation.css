@@ -1,0 +1,114 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ajusta el modelo de caja al tamaño total */
+}
+
+body {   
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Ajusta la altura mínima al 100% del viewport */
+    width: 100vw; /* Ajusta el ancho al 100% del viewport */
+    /*
+    Por alguna razón la línea inmediata de abajo hace que funcione, pero si la quito
+    la altura del body no se ajusta al 100% del viewport. No sé por qué.
+    */
+    border: 1px solid black; /* Borde rojo de 1px */
+    position: relative; /* Necesario para posicionar los pseudo-elementos relativos al body */
+    object-fit: cover; /* Cubre completamente el viewport sin distorsionar */
+}
+
+/* Fondo dividido */
+body::before,
+body::after {
+    content: '';
+    position: absolute; /* Posiciona los pseudo-elementos relativos al body */
+    top: 0;
+    bottom: 0;    
+    z-index: -1; /* Asegura que los pseudo-elementos estén debajo de todos los demás elementos */
+}
+
+body::before {
+    left: 0;
+    width: 30%; /* Ancho del primer rectángulo */
+    background-color: #FFC46B; /* Color del primer rectángulo */
+}
+
+body::after {
+    right: 0;
+    width: 70%; /* Ancho del segundo rectángulo */
+    background-color: #202020; /* Color del segundo rectángulo */
+}
+
+/* Contenedor del contenido de presentación */
+#presentacion {
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    margin-top: 10%;
+    gap: 5%; /* Espacio entre la imagen y el texto */    
+}
+
+/* Estilo para el contenedor picture */
+#presentacion picture {
+    display: block; /* Asegura que sea un bloque para manejar dimensiones */
+    width: 45%; /* Ajusta el ancho al 45% del contenedor */
+    max-width: 100%; /* Asegura que no exceda el ancho máximo */
+    height: auto; /* Permite ajuste automático de la altura */
+    border: 0.1vw solid black; /* Borde blanco de 0.1vw */
+    border-radius: 2%;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
+    padding: 1%;
+    margin-left: 5%;
+}
+
+/* Estilo para la imagen dentro de picture */
+#presentacion picture img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Ajuste automático de la altura */
+    object-fit: cover; /* Cubre completamente el contenedor sin distorsionar */
+}
+
+/* Estilo para el artículo */
+#presentacion article {
+    flex: 1; /* Toma el espacio restante disponible */
+    display: flex; /* Utiliza flexbox para el diseño interno */
+    flex-direction: column; /* Coloca los hijos en columna */
+    text-align: justify; /* Justifica el texto */
+    margin-right: 5%;
+}
+
+/* Estilo para el título */
+#presentacion article h1 {
+    color: #FFCB7E; /* Color personalizado */
+    font-weight: lighter;
+    font-size: 175%;
+    margin-top: -12%; /* Ajusta este valor según sea necesario */
+    margin-bottom: 4%;    
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el párrafo */
+#presentacion article p {
+    margin-top: 0%; /* Ajusta este valor según sea necesario */
+}
+
+footer {
+    position: static;
+    width: 20%;       
+    margin-top: 10%;
+    margin-left: 5%; /* Ajusta este valor según sea necesario */            
+}
+
+/* Estilo para los iconos del footer */
+footer nav ul {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    padding: 0;
+    gap: 15%; /* Espacio entre los iconos */
+}
+
+footer nav ul li a i {
+    font-size: 300%; /* Ajusta este valor según el tamaño deseado */    
+}

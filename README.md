@@ -1,2 +1,2 @@
-# Proyecto Integrador (UPQ): Despacho Jurídico
-Avances que nos corresponden a mi compañero Alberto como a mí, respecto al proyecto integrador para la materia de porgramación móvil.
+# Despacho_Juridico
+Avances del desarrollo (CSS, JS, HTML y PHP) del sitio web para el despacho juridico Actopan
