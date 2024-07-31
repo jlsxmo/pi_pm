@@ -1,31 +1,96 @@
-header {    
-    margin-top: 5vh;
-    border-top: 0.2vw solid white;      
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header { /* Encabezado global */
+  border-top: 1px solid white;
+  display: flex;
+  margin-top: 20px;   
+}
+
+header section { /* Sección que contiene el enlace-logo */    
+  margin-left: 64px;
+  margin-top: 8px;  
+}
+
+header section a { /* Enlace de la sección */    
+  display: flex;
+}
+
+header section a img{ /* El logo de la sección */  
+  width: 76px; height: 76px; /* La imágen ya tiene este tamaño por defecto */
+}
+
+/* ***** */
+
+header nav{ /* El nav que contiene la lista de enlaces */  
+  margin-left: 300px;
+  width: 100%; height: auto;
+  display: flex;
+}
+
+header nav ul { /* La lista de enlaces */  
+  display: flex;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-around; /* Distribuye los elementos equitativamente */
+}
+
+header nav ul li { /* Cada item de la lista */  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; height: 100%;
+}
+
+header nav ul li a { /* El enlace de cada item */  
+  color: white;
+  font-size: 1vw;
+  font-weight: lighter;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 100%; height: 100%;
+}
+
+nav ul li a:hover {
+  border-top: 5px solid #FFCB7E;  
+}
+
+/*
+header {
+  margin-top: 5vh;
+  border-top: 0.2vw solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header section {
-    justify-content: center;
-    align-items: center;
-    margin-left: 2vw;
-    margin-top: 2vh;    
-    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  display: flex;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;    
-    justify-content: right;
+  list-style: none;
+  display: flex;
+  justify-content: right;
 }
 
 nav ul li {
-    margin: 0 1vw;
+  margin: 0 1vw;
 }
 
-nav ul li a {    
-    color: white;
-    text-decoration: none;
-    font-size: 1vw;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1vw;
 }
+
+nav ul li a:hover {
+  border-top-color: #FFCB7E;
+}
+*/

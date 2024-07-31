@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px solid white;*//*Para ver los elementos como bloques*/
+}
+
+body {
+  background-color: #202020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #FFCB7E;
+  font-weight: lighter;
+}
+
+p {
+  margin-top: 20px;
+  padding: 0 100px;
+  text-align: justify;
+}
+
+div.galeria { /* Donde están todas las imagenes */
+  margin: 60px 100px;
+  display: flex;
+  justify-content: space-between;  
+}
+
+div.imagen { /* El conjunto de imagen y descripción */    
+  width: 275px;
+  height: auto;
+  background-color: #171717;  
+}
+
+div.imagen img { /* La imagen literalmente */
+  width: 100%;
+  height: auto;  
+}
+
+div.imagen:hover {
+  border: 1px solid gold;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}

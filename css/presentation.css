@@ -55,7 +55,7 @@ body::after {
     width: 45%; /* Ajusta el ancho al 45% del contenedor */
     max-width: 100%; /* Asegura que no exceda el ancho máximo */
     height: auto; /* Permite ajuste automático de la altura */
-    border: 0.1vw solid black; /* Borde blanco de 0.1vw */
+    border: 0.1vw solid #202020;
     border-radius: 2%;
     overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
     padding: 1%;
