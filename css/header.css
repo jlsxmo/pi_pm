@@ -1,96 +1,93 @@
 header { /* Encabezado global */
-  border-top: 1px solid white;
+  border-top: 1px solid white; /* Línea superior */  
   display: flex;
-  margin-top: 20px;   
+  margin-top: 20px;  
 }
 
-header section { /* Sección que contiene el enlace-logo */    
-  margin-left: 64px;
-  margin-top: 8px;  
+header section { /* Sección que contiene el enlace-logo */  
+  margin-left: 5vw; /* Equivale aproximadamente a 64px */
+  margin-top: 8px;  /* No es necesario escalar */
 }
 
 header section a { /* Enlace de la sección */    
-  display: flex;
+  display: flex;  
 }
 
-header section a img{ /* El logo de la sección */  
-  width: 76px; height: 76px; /* La imágen ya tiene este tamaño por defecto */
+header section a img{ /* El logo de la sección */    
+  width: 6vw; /* Equivale aproximadamente a 76px */
+  /* No es necesario especificar el height, ya que se ajusta automáticamente */
 }
 
 /* ***** */
 
-header nav{ /* El nav que contiene la lista de enlaces */  
-  margin-left: 300px;
-  width: 100%; height: auto;
-  display: flex;
+header nav{ /* El nav que contiene la lista de enlaces */   
+  margin-left: 23vw;   
+  display: flex;  
+  width: 100%;
 }
 
 header nav ul { /* La lista de enlaces */  
-  display: flex;
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  justify-content: space-around; /* Distribuye los elementos equitativamente */
+  display: flex;  
+  list-style: none;    
 }
 
 header nav ul li { /* Cada item de la lista */  
+  margin-top: -2.5px; /* Efecto iluminación de enlace: No es necesario escalar */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%; height: 100%;
+  padding: 0 1vw; /* Espacio entre enlaces */
 }
 
-header nav ul li a { /* El enlace de cada item */  
+header nav ul li a { /* El enlace de cada item */   
+  margin-top: 20px; /* No es necesario escalar */
+  margin-bottom: auto;  
   color: white;
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-weight: lighter;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  width: 100%; height: 100%;
+  display: flex;  
 }
 
-nav ul li a:hover {
-  border-top: 5px solid #FFCB7E;  
+/* Media Queries */
+
+/* Dispositivos muy pequeños (teléfonos de 600px de ancho o menos) */
+@media only screen and (max-width: 600px) {
+  header section { /* Sección que contiene el enlace-logo */  
+    margin-left: 0.5vw; /* Que el logo se acerque más al borde */
+    margin-top: 8px;  /* No es necesario escalar */
+  }
+
+  header nav{ /* El nav que contiene la lista de enlaces */   
+    margin-left: 2vw; /* Que la lista de enlaces se acerque más al logo */
+  }
+
+  header section a img{ /* El logo de la sección */    
+    width: 10vw;
+    /* No es necesario especificar el height, ya que se ajusta automáticamente */
+  }
+
+  header nav ul li a { /* El enlace de cada item */       
+    text-align: center; /* Para dar más espacio entre enlaces */        
+    font-size: 2vw;
+    font-weight: bold; /* Para que se vea mejor la letra */     
+  }
 }
 
-/*
-header {
-  margin-top: 5vh;
-  border-top: 0.2vw solid white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Dispositivos pequeños (tabletas en modo landscape y celulares grandes, 600px o más) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
 }
 
-header section {
-  justify-content: center;
-  align-items: center;
-  margin-left: 2vw;
-  margin-top: 2vh;
-  display: flex;
-}
+/* Dispositivos medianos (tabletas en modo landscape, 768px o más) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: right;
-}
+/* Dispositivos grandes (laptops/desktops, 992px o más) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
 
-nav ul li {
-  margin: 0 1vw;
+/* Dispositivos muy grandes (laptops grandes y compus de escritorio, más de 1200px) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
 }
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1vw;
-}
-
-nav ul li a:hover {
-  border-top-color: #FFCB7E;
-}
-*/

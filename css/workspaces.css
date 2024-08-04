@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /*border: 1px solid white;*//*Para ver los elementos como bloques*/
+  box-sizing: border-box;  
 }
 
 body {
@@ -11,27 +10,28 @@ body {
   font-family: Arial, sans-serif;
 }
 
-h1 {
+h1 { /* Áreas de Trabajo */
   text-align: center;
-  margin-top: 20px;
+  margin-top: 20px; /* No es necesario escalarlo */
   color: #FFCB7E;
   font-weight: lighter;
 }
 
-p {
+p { /* Bienvenido a Abogado... */
   margin-top: 20px;
-  padding: 0 100px;
+  padding: 0 8vw;
   text-align: justify;
 }
 
-div.galeria { /* Donde están todas las imagenes */
-  margin: 60px 100px;
+div.galeria { /* Donde están todas las imagenes */  
+  margin: 10vh 8vw;
   display: flex;
+  flex-wrap: wrap; /* Para que se acomoden en varias líneas si es necesario */
   justify-content: space-between;  
 }
 
-div.imagen { /* El conjunto de imagen y descripción */    
-  width: 275px;
+div.imagen { /* El conjunto de imagen y descripción */  
+  width: 22vw; /* Son aproximadamente 276px */
   height: auto;
   background-color: #171717;  
 }
@@ -42,10 +42,80 @@ div.imagen img { /* La imagen literalmente */
 }
 
 div.imagen:hover {
-  border: 1px solid gold;
+  border: 1px solid gold
 }
 
-div.desc {
-  padding: 15px;
+div.desc { /* La descripción de la imagen */
+  padding: 1.2vw; /* Son aproximadamente 15px */
   text-align: center;
+}
+
+/*********** Asesoría a elegir **********/
+.asesorias { /* Cada uno de los artículos pertenecientes a la sección de asesorías */
+  display: none; /* Para que no se muestren al principio */
+  margin: 5% 10%;
+  padding: 0.5%;
+}
+
+.asesorias h1 { /* Encabezado de cada asesoría-artículo */ 
+ font-weight: lighter;
+}
+
+.asesorias p { /* Parráfo de cada una de las asesorías-artículo */
+  border: 2px solid white; /* No es necesario escalarlo */
+  padding: 2%;
+}
+
+/* Media Queries */
+
+/* Dispositivos muy pequeños (teléfonos de 600px de ancho o menos) */
+@media only screen and (max-width: 600px) {
+  /* ... */
+  h1 {
+    font-size: 7vw;
+    color: #FFCB7E;
+  }
+
+  p { /* Bienvenido a Abogado... */
+    padding: 0 10vw; /* Para leer mejor en dispositivos pequeños */
+  }
+
+  div.galeria { /* Donde están todas las imagenes */
+    margin-top: 5vh;     
+  }
+
+  #i_fa { /* Asesoría familiar */
+    width: 45%;
+    margin-right: 10%;
+  }
+
+  #i_ag { /* Asesoría agraria */
+    width: 45%;
+  }
+
+  #i_pe { /* Aseroría penal */
+    margin-left: 27.5%;
+    margin-top: 5%;
+    width: 45%;
+  }
+}
+
+/* Dispositivos pequeños (tabletas en modo landscape y celulares grandes, 600px o más) */
+@media only screen and (min-width: 600px) {
+  /* ... */
+}
+
+/* Dispositivos medianos (tabletas en modo landscape, 768px o más) */
+@media only screen and (min-width: 768px) {
+  /* ... */
+} 
+
+/* Dispositivos grandes (laptops/desktops, 992px o más) */
+@media only screen and (min-width: 992px) {
+  /* ... */
+} 
+
+/* Dispositivos muy grandes (laptops grandes y compus de escritorio, más de 1200px) */
+@media only screen and (min-width: 1200px) {
+  /* ... */
 }

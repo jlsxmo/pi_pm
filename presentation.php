@@ -8,26 +8,12 @@
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/presentation.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
-  <header>
-    <section>
-      <a href="index.html">
-        <img src="./imgs/logo_peque.png" alt="Logo pequeño">
-      </a>      
-    </section>
-    <nav>
-      <ul>
-        <li><a href="presentation.html">PRESENTACIÓN</a></li>
-        <li><a href="about-me.html">SOBRE MÍ</a></li>
-        <li><a href="workspaces.html">ÁREAS DE TRABAJO</a></li>
-        <li><a href="contact.html">CONTACTO</a></li>
-        <li><a href="consultations.html">CONSULTAS</a></li>
-        <li><a href="login.html">INICIO DE SESIÓN</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Header -->
+  <?php include './php/header.php'; ?>
 
   <section id="presentacion">
     <picture>
@@ -53,27 +39,9 @@
     </article>
   </section>
 
-  <footer>
-    <nav>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/eliasantonio.aguilarromero?mibextid=LQQJ4d">
-            <i class="bi bi-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://mx.linkedin.com/in/el%C3%ADas-antonio-aguilar-romero-55427b1b7">
-            <i class="bi bi-linkedin"></i>
-          </a>
-        </li>          
-        <li>
-          <a href="#">
-            <i class="bi bi-twitter"></i>
-          </a>
-        </li>          
-      </ul>
-    </nav>    
-  </footer>
+  <!-- Footer -->
+  <?php include './php/footer.php'; ?>
+
 </body>
 
 </html>

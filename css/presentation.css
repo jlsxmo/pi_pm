@@ -92,23 +92,3 @@ body::after {
 #presentacion article p {
     margin-top: 0%; /* Ajusta este valor según sea necesario */
 }
-
-footer {
-    position: static;
-    width: 20%;       
-    margin-top: 10%;
-    margin-left: 5%; /* Ajusta este valor según sea necesario */            
-}
-
-/* Estilo para los iconos del footer */
-footer nav ul {
-    display: flex;
-    justify-content: left;
-    list-style-type: none;
-    padding: 0;
-    gap: 15%; /* Espacio entre los iconos */
-}
-
-footer nav ul li a i {
-    font-size: 300%; /* Ajusta este valor según el tamaño deseado */    
-}
