@@ -7,6 +7,7 @@
   <title>Áreas de trabajo</title>
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/workspaces.css">  
+  <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
@@ -45,16 +46,7 @@
   <article class="asesorias" id="familiar">
     <h1>FAMILIAR</h1>
     <p>
-      Con más de 15 años de experiencia en el ámbito del derecho familiar, el abogado Juan Pérez se ha destacado por su
-      dedicación y profesionalismo en la resolución de casos complejos de divorcio, custodia de menores, adopciones y
-      mediación familiar. Su enfoque centrado en el cliente y su profundo conocimiento de la legislación vigente le han
-      permitido ofrecer asesoría jurídica personalizada y eficiente, garantizando así la mejor protección de los
-      derechos e intereses de sus clientes en momentos cruciales de sus vidas. Además de su destacada capacidad para
-      litigar en tribunales, Juan Pérez es conocido por su habilidad para negociar acuerdos equitativos fuera de la
-      corte, lo que frecuentemente resulta en soluciones más rápidas y menos conflictivas para las partes involucradas.
-      Su trayectoria y éxito en numerosos casos avalan su reputación como un defensor confiable y comprometido en el
-      campo del derecho familiar, proporcionando una representación legal que combina empatía, ética y excelencia
-      profesional.
+    Siempre he dicho lo impactante que es descubrir lo que sucede detrás de la puerta de un hogar, de una familia o de una pareja, porque al final del día, haya sido poco o mucho el tiempo de relación ya sea sentimental o familiar, el propósito de todo es ´proteger los derechos que te han sido vulnerados, pero, sobre todo, si son derechos de personas menores de edad, pues son ellos quienes recienten el resultado de un proceso legal, por eso mi deber ético y profesional es orientarte a tomar la mejor decisión para que puedas resolver tu problema legal, de tal forma que en conjunto logremos resolver el conflicto, garantizando en todo momento el respeto a los derechos humanos de las niñas niños y adolescentes, para que dentro del marco legal, podamos resanar la fractura familiar que te atañe.
     </p>
   </article>
 
@@ -77,16 +69,7 @@
   <article class="asesorias" id="penal">
     <h1>PENAL</h1>
     <p>
-      Con más de 15 años de experiencia en el ámbito del derecho familiar, el abogado Juan Pérez se ha destacado por su
-      dedicación y profesionalismo en la resolución de casos complejos de divorcio, custodia de menores, adopciones y
-      mediación familiar. Su enfoque centrado en el cliente y su profundo conocimiento de la legislación vigente le han
-      permitido ofrecer asesoría jurídica personalizada y eficiente, garantizando así la mejor protección de los
-      derechos e intereses de sus clientes en momentos cruciales de sus vidas. Además de su destacada capacidad para
-      litigar en tribunales, Juan Pérez es conocido por su habilidad para negociar acuerdos equitativos fuera de la
-      corte, lo que frecuentemente resulta en soluciones más rápidas y menos conflictivas para las partes involucradas.
-      Su trayectoria y éxito en numerosos casos avalan su reputación como un defensor confiable y comprometido en el
-      campo del derecho familiar, proporcionando una representación legal que combina empatía, ética y excelencia
-      profesional.
+    Dentro de mi ética profesional no te puedo prometer alguna sentencia “justa” o absolutoria, pues ningún buen abogado te puede garantizar un resultado dentro de un proceso penal, pero si te garantizo por mi parte compromiso, honestidad, confidencialidad y profesionalismo para que, en buena lid, tus derechos y garantías se respeten en todo momento en el proceso penal, cuéntame tu caso.
     </p>
   </article>
 

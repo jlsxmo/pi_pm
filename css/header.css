@@ -41,6 +41,7 @@ header nav ul li a { /* El enlace de cada item */
   margin-top: 20px; /* No es necesario escalar */
   margin-bottom: auto;  
   color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;  
   font-size: 1.2vw;
   font-weight: lighter;
   text-decoration: none;

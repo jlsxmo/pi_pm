@@ -1,4 +1,4 @@
-<footer style="border: 1px solid white;">
+<footer>
     <nav>
       <a href="https://www.facebook.com/eliasantonio.aguilarromero?mibextid=LQQJ4d">
         <i class="bi bi-facebook"></i>
