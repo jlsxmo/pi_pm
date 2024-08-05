@@ -1,0 +1,25 @@
+* { /* Para resetear los estilos por defecto de los navegadores */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202020;
+  color: white;
+}
+
+/* Media Queries */
+
+/* Dispositivos muy pequeños (teléfonos de 600px de ancho o menos) */
+@media only screen and (max-width: 600px) {
+  #titulo { /* Título de la página */
+    border: 1px solid white;
+    font-size: 2.5em;
+  }
+}
+
+/* Estilos para dispositivos SOLAMENTE modo retrato con un ancho de 600px o más */
+@media (orientation: portrait) and (min-width: 600px) {
+  
+}
