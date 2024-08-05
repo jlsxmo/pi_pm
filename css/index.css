@@ -1,42 +1,66 @@
-* { /* Para resetear los estilos por defecto de los navegadores */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {  
+html {
+  width: 100vw;
+  height: 100vh;
   background-image: url('../imgs/index.png');
-  background-size: cover;  
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
-body {
-  height: 100vh;
+body {  
+  min-height: 100%; /* Asegura que el body tenga al menos la altura de la ventana */
   display: flex;
   flex-direction: column;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
-  background-color: rgba(12, 1, 7, 0.7); /* Opacidad para la imagen de fondo */
+  background-color: rgba(12, 1, 7, 0.7); /* Opacidad para el color de fondo */
 }
 
 #portada { /* El contenedor sección que contiene la portada */  
+  display: flex;
+  flex-direction: column;  
   align-items: center;
   height: 100%;
   width: 100%;
   text-align: center;
 }
 
-#portada .logo_G img {
+#portada .logo_G img {  
+  width: 20vw;
   margin-top: 10vh;
 }
 
-#portada .logo_G h1 {
+#portada .logo_G h1 {  
   margin-top: 2vh;
   font-size: 3vw;
   margin-bottom: 2vw;
 }
 
-#portada .logo_G h2 {
+#portada .logo_G h2 {  
   font-size: 2vw;
+}
+
+/** Media Queries **/
+
+/* Dispositivos muy pequeños (teléfonos de 600px de ancho o menos) */
+@media only screen and (max-width: 600px) {
+  #portada .logo_G img {  
+    width: 40vw;
+    margin-top: 20vh;
+  }
+
+  #portada .logo_G h1 {  
+    font-size: 6vw;
+    margin-bottom: 2vw;
+  }
+
+  #portada .logo_G h2 {  
+    font-size: 4vw;
+  }
 }

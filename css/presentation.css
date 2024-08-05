@@ -1,94 +1,90 @@
-/* Estilo global */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ajusta el modelo de caja al tamaño total */
+  /* Para que no haya margenes ni padding por defecto */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {   
-    color: white;
-    font-family: Arial, sans-serif;
-    min-height: 100vh; /* Ajusta la altura mínima al 100% del viewport */
-    width: 100vw; /* Ajusta el ancho al 100% del viewport */
-    /*
-    Por alguna razón la línea inmediata de abajo hace que funcione, pero si la quito
-    la altura del body no se ajusta al 100% del viewport. No sé por qué.
-    */
-    border: 1px solid black; /* Borde rojo de 1px */
-    position: relative; /* Necesario para posicionar los pseudo-elementos relativos al body */
-    object-fit: cover; /* Cubre completamente el viewport sin distorsionar */
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-/* Fondo dividido */
-body::before,
-body::after {
-    content: '';
-    position: absolute; /* Posiciona los pseudo-elementos relativos al body */
-    top: 0;
-    bottom: 0;    
-    z-index: -1; /* Asegura que los pseudo-elementos estén debajo de todos los demás elementos */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  overflow-x: hidden;
+  /* Previene el desplazamiento horizontal */
 }
 
-body::before {
-    left: 0;
-    width: 30%; /* Ancho del primer rectángulo */
-    background-color: #FFC46B; /* Color del primer rectángulo */
+/* Estilos para las secciones */
+.izq, .der {
+  position: fixed; /* Fija las secciones en la pantalla */
+  top: 0;
+  bottom: 0;
+  height: 100vh; /* Ajusta la altura al 100% del viewport */
 }
 
-body::after {
-    right: 0;
-    width: 70%; /* Ancho del segundo rectángulo */
-    background-color: #202020; /* Color del segundo rectángulo */
+.izq {
+  left: 0;
+  width: 50%; /* Ancho de la primera sección */
+  background-color: #FFC46B; /* Color del primer rectángulo */
 }
 
-/* Contenedor del contenido de presentación */
-#presentacion {
-    display: flex; /* Utiliza flexbox para el diseño */
-    align-items: flex-start; /* Alinea los elementos al inicio */
-    margin-top: 10%;
-    gap: 5%; /* Espacio entre la imagen y el texto */    
+.der {
+  right: 0;
+  width: 50%; /* Ancho de la segunda sección */
+  background-color: #202020; /* Color del segundo rectángulo */
 }
 
-/* Estilo para el contenedor picture */
-#presentacion picture {
-    display: block; /* Asegura que sea un bloque para manejar dimensiones */
-    width: 45%; /* Ajusta el ancho al 45% del contenedor */
-    max-width: 100%; /* Asegura que no exceda el ancho máximo */
-    height: auto; /* Permite ajuste automático de la altura */
-    border: 0.1vw solid #202020;
-    border-radius: 2%;
-    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
-    padding: 1%;
-    margin-left: 5%;
+/* Ajustes para el contenido */
+.contenido {
+  position: relative; /* Permite que el contenido esté sobre las secciones */
+  z-index: 1; /* Asegura que el contenido quede por encima */
+  flex: 1;  
+  color: white; /* Ajusta el color del texto para mejor contraste */
 }
 
-/* Estilo para la imagen dentro de picture */
-#presentacion picture img {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    height: auto; /* Ajuste automático de la altura */
-    object-fit: cover; /* Cubre completamente el contenedor sin distorsionar */
-}
+/* El código de arriba crea el fondo de las dos secciones de diferente */
 
-/* Estilo para el artículo */
-#presentacion article {
-    flex: 1; /* Toma el espacio restante disponible */
-    display: flex; /* Utiliza flexbox para el diseño interno */
-    flex-direction: column; /* Coloca los hijos en columna */
-    text-align: justify; /* Justifica el texto */
-    margin-right: 5%;
-}
+/* Media Queries */
 
-/* Estilo para el título */
-#presentacion article h1 {
-    color: #FFCB7E; /* Color personalizado */
-    font-weight: lighter;
-    font-size: 175%;
-    margin-top: -12%; /* Ajusta este valor según sea necesario */
-    margin-bottom: 4%;    
-    text-align: center; /* Centra el texto */
-}
+/* Dispositivos muy pequeños (teléfonos de 600px de ancho o menos) */
+@media only screen and (max-width: 600px) {
+  .contenido { /* El contenido de toda la página */
+    border: 1px solid transparent; /* Esto realmente no se ve */
+  }
 
-/* Estilo para el párrafo */
-#presentacion article p {
-    margin-top: 0%; /* Ajusta este valor según sea necesario */
+  .contenido section { /* La secciíon que incluye la imagen y presentación */    
+    display: flex;
+    flex-direction: column-reverse; /* Primero el texto y luego la imagen */    
+  }
+
+  .contenido article { /* La presentación */    
+    padding: 4vw;
+  }
+
+  .contenido article h1 { /* El título de la presentación */    
+    width: 100%;
+    text-align: center;
+    color: green
+  }
+
+  .contenido article p { /* El texto de la presentación */    
+    width: 100%;
+    text-align: justify;
+    margin-top: 5%;
+  }
+
+  .contenido #presentacion picture{    
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .contenido picture img{ 
+    width: 100%;
+  }
 }

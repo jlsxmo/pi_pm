@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Presentación - Elías Antonio Aguilar Romero</title>  
+  <title>Presentación - Elías Antonio Aguilar Romero</title>
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/presentation.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -12,35 +12,42 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <?php include './php/header.php'; ?>
 
-  <section id="presentacion">
-    <picture>
-      <img src="./imgs/mazo.png" alt="Mazo de juez">
-    </picture>
-    <article>
-      <h1>PRESENTACIÓN</h1>
-      <p>
-        Bienvenido a Abogado Elías Antonio Aguilar Romero. Al utilizar nuestro sitio, aceptas cumplir con los
-        términos
-        y condiciones establecidos en esta Política de Usuario. Asumimos que utilizarás nuestro sitio de manera
-        legal
-        y autorizada. No interferirás con su correcto funcionamiento. Si decides crear una cuenta, eres
-        responsable de
-        mantener la confidencialidad de tu información y notificarnos sobre cualquier uso no autorizado. Al subir
-        contenido al sitio, nos concedes una licencia para utilizarlo de manera específica. El manejo de la
-        información personal está sujeto a nuestra Política de Privacidad. Nos reservamos el derecho de modificar
-        esta
-        Política en cualquier momento, y las modificaciones serán efectivas al ser publicadas. Si tienes
-        preguntas,
-        contáctanos en eliasantny@hotmail.com. Gracias por elegir Abogado Elías Antonio Aguilar Romero.
-      </p>
-    </article>
-  </section>
+  <section class="izq"></section> <!-- Sección izquierda de color #FFC46B -->
+  <section class="der"></section> <!-- Sección derecha de color #202020 -->
 
-  <!-- Footer -->
-  <?php include './php/footer.php'; ?>
+  <div class="contenido">
+    <!-- Header -->
+    <header-placeholder></header-placeholder>
+
+    <section id="presentacion">
+      <picture>
+        <img src="./imgs/mazo.png" alt="Mazo de juez">
+      </picture>
+      <article>
+        <h1>PRESENTACIÓN</h1>
+        <p>
+          Cuando te enfrentas a un problema o conflicto y no sabes qué decisión tomar, es importante recordar que la
+          vida está compuesta por decisiones que inevitablemente traen consigo consecuencias. En esos momentos de
+          incertidumbre, cuando surge la necesidad de buscar un abogado que te asesore y te guíe hacia la solución de tu
+          problema, es fundamental contar con una persona profesional y comprometida, tanto consigo misma como con sus
+          clientes. Estoy aquí para ofrecerte mi experiencia y conocimiento en el ámbito del derecho, orientándote en
+          cada paso del proceso legal para que tu situación encuentre la mejor solución posible, siempre poniendo en
+          primer lugar tus intereses.
+          <br><br>
+          Mi objetivo es brindarte el apoyo necesario para que enfrentes cualquier desafío legal con confianza y
+          seguridad. Cada caso es único, y me esfuerzo por entender a fondo tus necesidades y preocupaciones.
+        </p>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer-placeholder></footer-placeholder>
+  </div>
+
+  <script src="./js/loadHeader.js"></script> <!-- Carga el header -->
+  <script src="./js/header.js"></script> <!-- Interacción del header -->
+  <script src="./js/loadFooter.js"></script> <!-- Carga el footer -->
 
 </body>
 
