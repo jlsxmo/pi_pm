@@ -31,8 +31,7 @@ div.galeria {
   /* Donde están todas las imagenes */
   margin: 10vh 8vw 5vh;  
   display: flex;
-  flex-wrap: wrap;
-  /* Para que se acomoden en varias líneas si es necesario */
+  flex-wrap: wrap; /* Para que se acomoden en varias líneas si es necesario */
   justify-content: space-between;  
 }
 

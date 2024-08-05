@@ -13,13 +13,160 @@ body {
 
 /* Dispositivos muy pequeños (teléfonos de 600px de ancho o menos) */
 @media only screen and (max-width: 600px) {
-  #titulo { /* Título de la página */
-    border: 1px solid white;
-    font-size: 2.5em;
+  #titulo { /* Título de la página */    
+    margin-top: 4vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 7vw;
+    font-weight: lighter;
+    text-align: center;
+    color: #FFCB7E;
+  }
+
+  #desc { /* Descripción de la página */    
+    text-align: justify;   
+    margin: 4vh 4vw;
+    /*font-size: 4vw;*/
+  }
+
+  #subti { /* Subtítulo de la página | Precios de cada consulta */    
+    margin: 2vh 4vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5vw;
+    font-weight: lighter;
+    text-align: left;
+    color: #FFCB7E;
+  }
+
+  .consultas{ /* Contenedor de las consultas */    
+    display: flex;
+    flex-wrap: wrap; /* Para que se acomoden en varias líneas si es necesario */
+    align-items: center;
+    justify-content: space-between;
+    margin: 4vh 4vw 0vh;    
+  }
+
+  .contI { /* Contenedor que contiene la imagen/enlace y su descripción */    
+    width: 30%;
+  }
+
+  .contI img { /* Imagen/enlace de la consulta */    
+    width: 100%;
+    height: auto;
+  }
+
+  .descC { /* Descripción de las consultas (Tipo y precio) */
+    border: 2px solid #FFC46B;
+    border-radius: 5px;
+    width: 100%;    
+    font-size: 3vw;
+    text-align: center;
+    padding: 2vh;
   }
 }
 
 /* Estilos para dispositivos SOLAMENTE modo retrato con un ancho de 600px o más */
 @media (orientation: portrait) and (min-width: 600px) {
-  
+  #titulo { /* Título de la página */    
+    margin-top: 4vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 7vw;
+    font-weight: lighter;
+    text-align: center;
+    color: #FFCB7E;
+  }
+
+  #desc { /* Descripción de la página */    
+    text-align: justify;   
+    margin: 4vh 4vw;
+    /*font-size: 4vw;*/
+  }
+
+  #subti { /* Subtítulo de la página | Precios de cada consulta */    
+    margin: 2vh 4vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5vw;
+    font-weight: lighter;
+    text-align: left;
+    color: #FFCB7E;
+  }
+
+  .consultas{ /* Contenedor de las consultas */    
+    display: flex;
+    flex-wrap: wrap; /* Para que se acomoden en varias líneas si es necesario */
+    align-items: center;
+    justify-content: space-between;
+    margin: 4vh 4vw 0vh;    
+  }
+
+  .contI { /* Contenedor que contiene la imagen/enlace y su descripción */    
+    width: 30%;
+  }
+
+  .contI img { /* Imagen/enlace de la consulta */    
+    width: 100%;
+    height: auto;
+  }
+
+  .descC { /* Descripción de las consultas (Tipo y precio) */
+    border: 2px solid #FFC46B;
+    border-radius: 5px;
+    width: 100%;    
+    font-size: 3vw;
+    text-align: center;
+    padding: 2vh;
+  }
+}
+
+/* Dispositivos muy grandes (Laptops grandes y de escritorio, 1200px de ancho en adelante) */
+@media only screen and (min-width: 1200px) {
+  #titulo { /* Título de la página */    
+    margin-top: 4vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    font-weight: lighter;
+    text-align: center;
+    color: #FFCB7E;
+  }
+
+  #desc { /* Descripción de la página */    
+    text-align: justify;   
+    margin: 4vh 10vw;
+    font-size: 1.4vw;
+  }
+
+  #subti { /* Subtítulo de la página | Precios de cada consulta */    
+    margin: 2vh 10vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    font-weight: lighter;
+    text-align: left;
+    color: #FFCB7E;
+  }
+
+  .consultas{ /* Contenedor de las consultas */       
+    display: flex;
+    flex-wrap: wrap; /* Para que se acomoden en varias líneas si es necesario */
+    align-items: center;
+    justify-content: space-between;
+    margin: 4vh 10vw 0vh;
+    padding: 0 10%;    
+  }
+
+  .contI { /* Contenedor que contiene la imagen/enlace y su descripción */    
+    width: 9vw;
+  }
+
+  .contI img { /* Imagen/enlace de la consulta */    
+    width: 100%;
+    height: auto;
+  }
+
+  .descC { /* Descripción de las consultas (Tipo y precio) */
+    border: 2px solid #FFC46B;
+    border-radius: 5px;
+    width: 100%;    
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 2vh;
+  }  
 }
