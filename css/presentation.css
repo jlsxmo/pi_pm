@@ -126,97 +126,156 @@ body {
 
 /* Dispositivos medianos (tabletas en modo landscape con ancho de 768px en adelante */
 @media only screen and (min-width: 768px) {
-  .contenido main { /* La sección que incluye la imagen y presentación */    
+  .contenido { /* El contenedor de todos los elementos */    
     display: flex;
-    flex-direction: column-reverse; /* Primero el texto y luego la imagen */    
+    flex-direction: column;    
   }
 
-  .contenido article { /* La presentación */    
-    padding: 4vw;
+  .contenido #presentacion { /* Contiene la imagen y la presentación */    
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    flex: 1; /* Toma el espacio disponible */
   }
 
-  .contenido article h1 { /* El título de la presentación */    
-    width: 100%;
-    font-size: 3.2vw;
-    text-align: center;
-    color: green
-  }
-
-  .contenido article p { /* El texto de la presentación */    
-    width: 100%;
-    font-size: 2.4vw;
-    text-align: justify;
-    margin-top: 5%;
-  }
-
-  .contenido #presentacion picture{ /* El contenedor de la imagen de la presentación */
+  .contenido #presentacion picture {
     border: 2px solid #202020;
+    display: flex;    
     border-radius: 5px;
-    padding: 1vw;  
-    width: 70vw;
-    margin: 0 auto;
+    padding: 0.5vw;
+    width: 100%; /* Ajusta el ancho del contenedor de la imagen */
+    width: 40vw;
+    /*max-width: 40vw; /* Limita el ancho máximo de la imagen */
   }
 
-  .contenido picture img{ /* La imagen de la presentación (el mazo) */
-    width: 100%;
+  .contenido picture img {    
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  .contenido article {    
+    margin-top: -2vw; /* Para alinear el texto con la imagen al limite superior */
+    padding: 2vw;
+    flex: 1; /* Toma el espacio disponible */
+    margin-left: 2vw; /* Espacio entre la imagen y el artículo */
+    max-width: 50vw; /* Limita el ancho máximo del artículo */
+  }
+
+  .contenido article h1 {    
+    font-size: 2.5vw;
+    font-weight: lighter;
+    text-align: center;
+    color: #FFC46B; /* Color del primer rectángulo */
+  }
+
+  .contenido article p {    
+    font-size: 1.5vw;
+    text-align: justify;
+    margin-top: 1rem;
   }
 }
 
 /* Dispositivos grandes (Laptops y de escritorio, 992px en adelante) */
 @media only screen and (min-width: 992px) {
-  .contenido {
+  .contenido { /* El contenedor de todos los elementos */    
     display: flex;
-    flex-direction: column;     
-  }
-  .contenido main { /* La sección que incluye la imagen y presentación */
-    border: 1px solid white;    
-    display: flex;
-    width: 100%;
-    height: auto; 
+    flex-direction: column;    
   }
 
-  .contenido article { /* La presentación */
-    border: 1px solid white;    
-    padding: 1vw;
-    margin-left: 5vw;
+  .contenido #presentacion { /* Contiene la imagen y la presentación */    
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    flex: 1; /* Toma el espacio disponible */
   }
 
-  .contenido article h1 { /* El título de la presentación */
-    border: 1px solid white;    
-    width: 100%;
+  .contenido #presentacion picture {
+    border: 2px solid #202020;
+    display: flex;    
+    border-radius: 5px;
+    padding: 0.5vw;
+    width: 100%; /* Ajusta el ancho del contenedor de la imagen */
+    width: 40vw;
+    /*max-width: 40vw; /* Limita el ancho máximo de la imagen */
+  }
+
+  .contenido picture img {    
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  .contenido article {    
+    margin-top: -2vw; /* Para alinear el texto con la imagen al limite superior */
+    padding: 2vw;
+    flex: 1; /* Toma el espacio disponible */
+    margin-left: 2vw; /* Espacio entre la imagen y el artículo */
+    max-width: 50vw; /* Limita el ancho máximo del artículo */
+  }
+
+  .contenido article h1 {    
     font-size: 2.5vw;
+    font-weight: lighter;
     text-align: center;
-    color: green
+    color: #FFC46B; /* Color del primer rectángulo */
   }
 
-  .contenido article p { /* El texto de la presentación */
-    border: 1px solid white;    
-    width: 100%;
+  .contenido article p {    
     font-size: 1.5vw;
     text-align: justify;
-    margin-top: 5%;
-  }
-
-  .contenido #presentacion { /* El contenedor de la imagen de la presentación */
-    display: flex;
-  }
-
-   .contenido #presentacion picture{ /* El contenedor de la imagen de la presentación */    
-    border: 2px solid #202020;
-    display: flex; 
-    width: 100%;
-    padding: 0.5vw;
-    border-radius: 5px;
-    margin-left: 10vw;       
-  }
-
-  .contenido picture img{ /* La imagen de la presentación (el mazo) */
-    float: left;
-    width: 30vw;
-    border: 1px solid white;   
+    margin-top: 1rem;
   }
 }
 
 /* Dispositivos muy grandes (Laptops grandes y de escritorio, 1200px de ancho en adelante) */
 @media only screen and (min-width: 1200px) {  
+  .contenido { /* El contenedor de todos los elementos */    
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .contenido #presentacion { /* Contiene la imagen y la presentación */    
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
+    flex: 1; /* Toma el espacio disponible */
+  }
+
+  .contenido #presentacion picture {
+    border: 2px solid #202020;
+    margin-top: 5vh;
+    margin-left: 12vw;
+    display: flex;    
+    border-radius: 5px;
+    padding: 0.2vw;  
+    width: 40vw;    
+  }
+
+  .contenido picture img {    
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  .contenido article {    
+    margin-top: -2vw; /* Para alinear el texto con la imagen al limite superior */
+    padding: 2vw;
+    flex: 1; /* Toma el espacio disponible */
+    margin-left: 2vw; /* Espacio entre la imagen y el artículo */
+    max-width: 50vw; /* Limita el ancho máximo del artículo */
+  }
+
+  .contenido article h1 {        
+    font-size: 2vw;
+    font-weight: lighter;
+    text-align: center;
+    color: #FFC46B; /* Color del primer rectángulo */
+  }
+
+  .contenido article p {    
+    font-size: 1.3vw;
+    text-align: justify;
+    margin-top: 1rem;
+  }
 }
