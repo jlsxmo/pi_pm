@@ -7,7 +7,8 @@
 html {
   width: 100vw;
   height: 100vh;
-  display: flex;  
+  display: flex;
+  flex-direction: column;
   background-image: url('../imgs/index.png');
   background-size: cover;
   background-position: center;
@@ -16,7 +17,7 @@ html {
 
 body {
   /* Asegura que el body tenga al menos la altura de la ventana */
-  min-height: 100vh;  
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -56,36 +57,31 @@ body {
 
 /* Dispositivos muy pequeños (teléfonos de 600px hacia atras) */
 @media only screen and (max-width: 600px) {
-  #portada {/* Contenedor del div que a su vez contiene la imagen del logo, título y subtítulo */    
+  #portada {/* Contenedor del div que a su vez contiene la imagen del logo, título y subtítulo */           
     display: flex;
-    width: 90vw;
-    height: 30vh;
+    width: 100%;    
     margin: 20vh auto;
     text-align: center;
+    justify-content: center;
   }
 
-  .logo_G {/* Contenedor de la imagen del logo */
-    border: 1px solid white;    
-    flex-wrap: wrap;
+  .logo_G {/* Contenedor de la imagen del logo */          
     width: 100%;
     height: auto;
   }
 
-  .logo_G img { /* Imagen del logo */
-    border: 1px solid white;
+  .logo_G img { /* Imagen del logo */    
     width: 40%;
     height: auto;
   }
 
-  .logo_G h1 { /* Título: Nombre del abogado */
-    border: 1px solid white;
+  .logo_G h1 { /* Título: Nombre del abogado */    
     width: 100%;
     font-size: 4.5vw;
     margin-bottom: 2vw;
   }
 
-  .logo_G h2 { /* Subtítulo */
-    border: 1px solid white;
+  .logo_G h2 { /* Subtítulo */    
     width: 100%;
     font-size: 3.5vw;
   }
@@ -93,18 +89,33 @@ body {
 
 /* Dispositivos pequeños (tabletas en modo retrato y teléfonos de 601px en adelante) */
 @media only screen and (min-width: 601px) {
-  #portada .logo_G img {
-    width: 25vw;
-    margin-top: 20vh;
+  #portada {/* Contenedor del div que a su vez contiene la imagen del logo, título y subtítulo */           
+    display: flex;
+    width: 100%;    
+    margin: 20vh auto;
+    text-align: center;
+    justify-content: center;
   }
 
-  #portada .logo_G h1 {
-    font-size: 4vw;
+  .logo_G {/* Contenedor de la imagen del logo */          
+    width: 100%;
+    height: auto;
+  }
+
+  .logo_G img { /* Imagen del logo */    
+    width: 40%;
+    height: auto;
+  }
+
+  .logo_G h1 { /* Título: Nombre del abogado */    
+    width: 100%;
+    font-size: 4.5vw;
     margin-bottom: 2vw;
   }
 
-  #portada .logo_G h2 {
-    font-size: 3vw;
+  .logo_G h2 { /* Subtítulo */    
+    width: 100%;
+    font-size: 3.5vw;
   }
 }
 
