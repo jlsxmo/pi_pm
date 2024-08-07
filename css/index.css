@@ -6,11 +6,9 @@
 
 html {
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100vh;  
   background-image: url('../imgs/index.png');
-  background-size: cover;
+  background-size: fill;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -20,7 +18,7 @@ body {
   min-height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
   /* Opacidad para el color de fondo */
@@ -55,10 +53,19 @@ body {
 
 /** Media Queries **/
 
+/* Dispositivos con altura muy pequeña (teléfonos de 662px hacia atras) 
+o en caso de que la altura de la ventana del navegador sea menor a 662px */
+@media only screen and (min-height: 662px){
+  html {    
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño de la ventana */
+  }
+}
+
 /* Dispositivos muy pequeños (teléfonos de 600px hacia atras) */
 @media only screen and (max-width: 600px) {
   #portada {/* Contenedor del div que a su vez contiene la imagen del logo, título y subtítulo */           
     display: flex;
+    flex: 1;
     width: 100%;    
     margin: 20vh auto;
     text-align: center;
@@ -97,7 +104,7 @@ body {
     justify-content: center;
   }
 
-  .logo_G {/* Contenedor de la imagen del logo */          
+  .logo_G {/* Contenedor de la imagen del logo */              
     width: 100%;
     height: auto;
   }
