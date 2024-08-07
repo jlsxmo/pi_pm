@@ -48,17 +48,13 @@ body {
   color: white; /* Ajusta el color del texto para mejor contraste */
 }
 
-/* El código de arriba crea el fondo de las dos secciones de diferente */
+/* El código de arriba crea el fondo de las dos secciones de diferente color */
 
 /* Media Queries */
 
-/* Dispositivos muy pequeños (teléfonos de 600px de ancho o menos) */
+/* Dispositivos muy pequeños (teléfonos de 600px hacia atras) */
 @media only screen and (max-width: 600px) {
-  .contenido { /* El contenido de toda la página */
-    border: 1px solid transparent; /* Esto realmente no se ve */
-  }
-
-  .contenido section { /* La secciíon que incluye la imagen y presentación */    
+  .contenido main { /* La sección que incluye la imagen y presentación */    
     display: flex;
     flex-direction: column-reverse; /* Primero el texto y luego la imagen */    
   }
@@ -79,12 +75,148 @@ body {
     margin-top: 5%;
   }
 
-  .contenido #presentacion picture{    
+  .contenido #presentacion picture{ /* El contenedor de la imagen de la presentación */
+    border: 2px solid #202020;
+    border-radius: 5px;
+    padding: 1vw;   
     width: 90vw;
+    margin: 4vh auto 0;
+  }
+
+  .contenido picture img{ /* La imagen de la presentación (el mazo) */
+    width: 100%;
+  }
+}
+
+/* Dispositivos pequeños (tabletas en modo retrato y teléfonos de 601px en adelante) */
+@media only screen and (min-width: 601px) {
+  .contenido main { /* La sección que incluye la imagen y presentación */    
+    display: flex;
+    flex-direction: column-reverse; /* Primero el texto y luego la imagen */    
+  }
+
+  .contenido article { /* La presentación */    
+    padding: 4vw;
+  }
+
+  .contenido article h1 { /* El título de la presentación */    
+    width: 100%;
+    text-align: center;
+    color: green
+  }
+
+  .contenido article p { /* El texto de la presentación */    
+    width: 100%;
+    text-align: justify;
+    margin-top: 5%;
+  }
+
+  .contenido #presentacion picture{ /* El contenedor de la imagen de la presentación */
+    border: 2px solid #202020;
+    border-radius: 5px;
+    padding: 1vw;  
+    width: 70vw;
     margin: 0 auto;
   }
 
-  .contenido picture img{ 
+  .contenido picture img{ /* La imagen de la presentación (el mazo) */
     width: 100%;
   }
+}
+
+/* Dispositivos medianos (tabletas en modo landscape con ancho de 768px en adelante */
+@media only screen and (min-width: 768px) {
+  .contenido main { /* La sección que incluye la imagen y presentación */    
+    display: flex;
+    flex-direction: column-reverse; /* Primero el texto y luego la imagen */    
+  }
+
+  .contenido article { /* La presentación */    
+    padding: 4vw;
+  }
+
+  .contenido article h1 { /* El título de la presentación */    
+    width: 100%;
+    font-size: 3.2vw;
+    text-align: center;
+    color: green
+  }
+
+  .contenido article p { /* El texto de la presentación */    
+    width: 100%;
+    font-size: 2.4vw;
+    text-align: justify;
+    margin-top: 5%;
+  }
+
+  .contenido #presentacion picture{ /* El contenedor de la imagen de la presentación */
+    border: 2px solid #202020;
+    border-radius: 5px;
+    padding: 1vw;  
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  .contenido picture img{ /* La imagen de la presentación (el mazo) */
+    width: 100%;
+  }
+}
+
+/* Dispositivos grandes (Laptops y de escritorio, 992px en adelante) */
+@media only screen and (min-width: 992px) {
+  .contenido {
+    display: flex;
+    flex-direction: column;     
+  }
+  .contenido main { /* La sección que incluye la imagen y presentación */
+    border: 1px solid white;    
+    display: flex;
+    width: 100%;
+    height: auto; 
+  }
+
+  .contenido article { /* La presentación */
+    border: 1px solid white;    
+    padding: 1vw;
+    margin-left: 5vw;
+  }
+
+  .contenido article h1 { /* El título de la presentación */
+    border: 1px solid white;    
+    width: 100%;
+    font-size: 2.5vw;
+    text-align: center;
+    color: green
+  }
+
+  .contenido article p { /* El texto de la presentación */
+    border: 1px solid white;    
+    width: 100%;
+    font-size: 1.5vw;
+    text-align: justify;
+    margin-top: 5%;
+  }
+
+  .contenido #presentacion { /* El contenedor de la imagen de la presentación */
+    display: flex;
+  }
+
+   .contenido #presentacion picture{ /* El contenedor de la imagen de la presentación */    
+    border: 2px solid #202020;
+    display: flex; 
+    width: 100%;
+    padding: 0.5vw;
+    border-radius: 5px;
+    margin-left: 10vw;       
+  }
+
+  .contenido picture img{ /* La imagen de la presentación (el mazo) */
+    float: left;
+    width: 30vw;
+    border: 1px solid white;   
+  }
+}
+
+/* Dispositivos muy grandes (Laptops grandes y de escritorio, 1200px de ancho en adelante) */
+@media only screen and (min-width: 1200px) {  
 }

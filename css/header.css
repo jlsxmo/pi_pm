@@ -1,44 +1,43 @@
-header { /* Encabezado global */
-  border-top: 1px solid white; /* Línea superior */  
-  display: flex;
-  margin-top: 20px;  
+/* header { 
+  border-top: 1px solid white;
+  display: flex;  
+  margin-top: 3vh;
 }
 
-header section { /* Sección que contiene el enlace-logo */  
-  margin-left: 5vw; /* Equivale aproximadamente a 64px */
-  margin-top: 8px;  /* No es necesario escalar */
+header section {
+  margin-left: 5vw;
+  margin-top: 8px;
 }
 
-header section a { /* Enlace de la sección */    
+header section a {
   display: flex;  
 }
 
-header section a img{ /* El logo de la sección */    
-  width: 6vw; /* Equivale aproximadamente a 76px */
-  /* No es necesario especificar el height, ya que se ajusta automáticamente */
-}
+header section a img{
+  width: 6vw;  
+}*/
 
-/* ***** */
-
-header nav{ /* El nav que contiene la lista de enlaces */   
+/* Navegación */
+/*
+header nav{ 
   margin-left: 23vw;   
   display: flex;  
   width: 100%;
 }
 
-header nav ul { /* La lista de enlaces */  
+header nav ul {
   display: flex;  
   list-style: none;    
 }
 
-header nav ul li { /* Cada item de la lista */  
-  margin-top: -2.5px; /* Efecto iluminación de enlace: No es necesario escalar */
+header nav ul li {
+  margin-top: -2.5px;
   display: flex;
-  padding: 0 1vw; /* Espacio entre enlaces */
+  padding: 0 1vw;
 }
 
-header nav ul li a { /* El enlace de cada item */   
-  margin-top: 20px; /* No es necesario escalar */
+header nav ul li a {
+  margin-top: 20px;
   margin-bottom: auto;  
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;  
@@ -46,49 +45,185 @@ header nav ul li a { /* El enlace de cada item */
   font-weight: lighter;
   text-decoration: none;
   display: flex;  
-}
+}*/
 
 /* Media Queries */
 
-/* Dispositivos muy pequeños (teléfonos de 600px de ancho o menos) */
+/* Dispositivos muy pequeños (teléfonos de 600px hacia atras) */
 @media only screen and (max-width: 600px) {
-  header section { /* Sección que contiene el enlace-logo */  
-    margin-left: 0.5vw; /* Que el logo se acerque más al borde */
+  header { /* El header global */
+    border-top: 1px solid white;    
+    display: flex;  
+    margin-top: 3%;
+  }
+
+  header section { /* La sección que contiene al logo pequeño */    
+    margin-left: 1%;
+    margin-top: 8px;
+  }
+
+  header section a { /* Enlace que contiene al logo pequeño */    
+    display: flex;  
+  }
+
+  header section a img{ /* La imagen del logo pequeño */    
+    width: 10vw;
+  }*/
+
+/* Navegación */
+
+  header nav { /* El nav que contiene la lista de enlaces */
+    border: 1px solid white; 
+    margin-left: 1vw;   
+    display: flex;  
+    width: 100%;
+    height: auto;
+  }
+
+  header nav ul { /* La lista de enlaces */    
+    display: flex;  
+    list-style: none;    
+  }
+  
+  header nav ul li { /* Cada item de la lista de enlaces */
+    margin-top: -2.5px;
+    display: flex;
+    padding: 0 1vw;
+  }
+  
+  header nav ul li a { /* El enlace de cada item */
+    margin-top: 20px;
+    margin-bottom: auto;  
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    text-align: center;  
+  }
+}
+
+/* Dispositivos pequeños (tabletas en modo retrato y teléfonos de 601px en adelante) */
+@media only screen and (min-width: 601px) {
+  header { /* El header global */
+    border-top: 1px solid white;    
+    display: flex;  
+    margin-top: 3%;
+  }
+
+  header section { /* La sección que contiene al logo pequeño */    
+    margin-left: 1%;
+    margin-top: 8px;
+  }
+
+  header section a { /* Enlace que contiene al logo pequeño */    
+    display: flex;  
+  }
+
+  header section a img{ /* La imagen del logo pequeño */    
+    width: 10vw;
+  }*/
+
+/* Navegación */
+
+  header nav { /* El nav que contiene la lista de enlaces */
+    border: 1px solid white; 
+    margin-left: 1vw;   
+    display: flex;  
+    width: 100%;
+    height: auto;
+  }
+
+  header nav ul { /* La lista de enlaces */    
+    display: flex;  
+    list-style: none;    
+  }
+  
+  header nav ul li { /* Cada item de la lista de enlaces */
+    margin-top: -2.5px;
+    display: flex;
+    padding: 0 1vw;
+  }
+  
+  header nav ul li a { /* El enlace de cada item */
+    margin-top: 20px;
+    margin-bottom: auto;  
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    font-size: 2vw;
+    font-weight: lighter;
+    text-decoration: none;
+    display: flex;
+    text-align: center;  
+  }
+}
+
+/* Dispositivos medianos (tabletas en modo landscape con ancho de 768px en adelante */
+@media only screen and (min-width: 768px) {
+  header section { /* Sección que contiene el enlace-logo */    
+    margin-left: 2vw;
     margin-top: 8px;  /* No es necesario escalar */
   }
 
   header nav{ /* El nav que contiene la lista de enlaces */   
-    margin-left: 2vw; /* Que la lista de enlaces se acerque más al logo */
+    margin-left: 7vw;
   }
 
   header section a img{ /* El logo de la sección */    
-    width: 10vw;
+    width: 7vw;
     /* No es necesario especificar el height, ya que se ajusta automáticamente */
   }
 
   header nav ul li a { /* El enlace de cada item */       
     text-align: center; /* Para dar más espacio entre enlaces */        
-    font-size: 2vw;
-    font-weight: bold; /* Para que se vea mejor la letra */     
+    font-size: 1.6vw;
+    font-weight: lighter;     
   }
-}
-
-/* Dispositivos pequeños (tabletas en modo landscape y celulares grandes, 600px o más) */
-@media only screen and (min-width: 600px) {
-  .example {background: green;}
-}
-
-/* Dispositivos medianos (tabletas en modo landscape, 768px o más) */
-@media only screen and (min-width: 768px) {
-  .example {background: blue;}
 } 
 
-/* Dispositivos grandes (laptops/desktops, 992px o más) */
+/* Dispositivos grandes (Laptops y de escritorio, 992px en adelante) */
 @media only screen and (min-width: 992px) {
-  .example {background: orange;}
+  header section { /* Sección que contiene el enlace-logo */    
+    margin-left: 5vw;
+    margin-top: 8px;  /* No es necesario escalar */
+  }
+
+  header nav{ /* El nav que contiene la lista de enlaces */   
+    margin-left: 12vw;
+  }
+
+  header section a img{ /* El logo de la sección */    
+    width: 7vw;
+    /* No es necesario especificar el height, ya que se ajusta automáticamente */
+  }
+
+  header nav ul li a { /* El enlace de cada item */       
+    text-align: center; /* Para dar más espacio entre enlaces */        
+    font-size: 1.4vw;
+    font-weight: lighter;     
+  }
 } 
 
-/* Dispositivos muy grandes (laptops grandes y compus de escritorio, más de 1200px) */
+/* Dispositivos muy grandes (Laptops grandes y de escritorio, 1200px en adelante) */
 @media only screen and (min-width: 1200px) {
-  .example {background: pink;}
+  header section { /* Sección que contiene el enlace-logo */    
+    margin-left: 5vw;
+    margin-top: 8px;  /* No es necesario escalar */
+  }
+
+  header nav{ /* El nav que contiene la lista de enlaces */   
+    margin-left: 23vw;
+  }
+
+  header section a img{ /* El logo de la sección */    
+    width: 6vw;
+    /* No es necesario especificar el height, ya que se ajusta automáticamente */
+  }
+
+  header nav ul li a { /* El enlace de cada item */       
+    text-align: center; /* Para dar más espacio entre enlaces */        
+    font-size: 1.2vw;
+    font-weight: lighter;     
+  }
 }

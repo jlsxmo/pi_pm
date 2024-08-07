@@ -7,22 +7,27 @@
 html {
   width: 100vw;
   height: 100vh;
+  display: flex;  
   background-image: url('../imgs/index.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-body {  
-  min-height: 100%; /* Asegura que el body tenga al menos la altura de la ventana */
+body {
+  /* Asegura que el body tenga al menos la altura de la ventana */
+  min-height: 100vh;  
+  width: 100vw;
   display: flex;
   flex-direction: column;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
-  background-color: rgba(12, 1, 7, 0.7); /* Opacidad para el color de fondo */
+  /* Opacidad para el color de fondo */
+  background-color: rgba(12, 1, 7, 0.7);  
 }
 
-#portada { /* El contenedor sección que contiene la portada */  
+/*
+#portada { 
   display: flex;
   flex-direction: column;  
   align-items: center;
@@ -45,22 +50,116 @@ body {
 #portada .logo_G h2 {  
   font-size: 2vw;
 }
+*/
 
 /** Media Queries **/
 
-/* Dispositivos muy pequeños (teléfonos de 600px de ancho o menos) */
+/* Dispositivos muy pequeños (teléfonos de 600px hacia atras) */
 @media only screen and (max-width: 600px) {
-  #portada .logo_G img {  
-    width: 40vw;
-    margin-top: 20vh;
+  #portada {/* Contenedor del div que a su vez contiene la imagen del logo, título y subtítulo */    
+    display: flex;
+    width: 90vw;
+    height: 30vh;
+    margin: 20vh auto;
+    text-align: center;
   }
 
-  #portada .logo_G h1 {  
-    font-size: 6vw;
+  .logo_G {/* Contenedor de la imagen del logo */
+    border: 1px solid white;    
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .logo_G img { /* Imagen del logo */
+    border: 1px solid white;
+    width: 40%;
+    height: auto;
+  }
+
+  .logo_G h1 { /* Título: Nombre del abogado */
+    border: 1px solid white;
+    width: 100%;
+    font-size: 4.5vw;
     margin-bottom: 2vw;
   }
 
-  #portada .logo_G h2 {  
+  .logo_G h2 { /* Subtítulo */
+    border: 1px solid white;
+    width: 100%;
+    font-size: 3.5vw;
+  }
+}
+
+/* Dispositivos pequeños (tabletas en modo retrato y teléfonos de 601px en adelante) */
+@media only screen and (min-width: 601px) {
+  #portada .logo_G img {
+    width: 25vw;
+    margin-top: 20vh;
+  }
+
+  #portada .logo_G h1 {
     font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+
+  #portada .logo_G h2 {
+    font-size: 3vw;
+  }
+}
+
+/* Dispositivos medianos (tabletas en modo landscape con ancho de 768px en adelante */
+@media only screen and (min-width: 768px) {
+  #portada {
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  #portada .logo_G img {
+    width: 25vw;
+    margin-top: 0vh;
+  }
+
+  #portada .logo_G h1 {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
+
+  #portada .logo_G h2 {
+    font-size: 2vw;
+  }
+}
+
+/* Dispositivos grandes (Laptops y de escritorio, 992px en adelante) */
+@media only screen and (min-width: 992px) {
+  #portada .logo_G img {
+    width: 20vw;
+    margin-top: 12vh;
+  }
+
+  #portada .logo_G h1 {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
+
+  #portada .logo_G h2 {
+    font-size: 2vw;
+  }
+}
+
+/* Dispositivos muy grandes (Laptops grandes y de escritorio, 1200px en adelante) */
+@media only screen and (min-width: 1200px) {
+  #portada .logo_G img {
+    width: 20vw;
+    margin-top: 4vh;
+  }
+
+  #portada .logo_G h1 {
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
+  }
+
+  #portada .logo_G h2 {
+    font-size: 1.5vw;
   }
 }

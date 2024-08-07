@@ -9,7 +9,7 @@ function iluminar(event) {
     li.style.borderTop = '5px solid #FFCB7E';
   
     // Compensamos los 5 px del borde superior del <li>
-    enlace.style.marginTop = '15px';
+    enlace.style.marginTop = '16px';
   }
   
   function apagar(event) {

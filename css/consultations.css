@@ -25,7 +25,7 @@ body {
   #desc { /* Descripción de la página */    
     text-align: justify;   
     margin: 4vh 4vw;
-    /*font-size: 4vw;*/
+    font-size: 3vw;
   }
 
   #subti { /* Subtítulo de la página | Precios de cada consulta */    
@@ -64,12 +64,12 @@ body {
   }
 }
 
-/* Dispositivos pequeños (tabletas en modo retrato y telefonos grandes, 600px en adelante) */
-@media only screen and (min-width: 600px) {
+/* Dispositivos pequeños (tabletas en modo retrato y telefonos grandes, 601px en adelante) */
+@media only screen and (min-width: 601px) {
   #titulo { /* Título de la página */    
     margin-top: 4vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: lighter;
     text-align: center;
     color: #FFCB7E;
@@ -78,7 +78,7 @@ body {
   #desc { /* Descripción de la página */    
     text-align: justify;   
     margin: 4vh 4vw;
-    font-size: 2.4vw;
+    font-size: 3vw;
   }
 
   #subti { /* Subtítulo de la página | Precios de cada consulta */        
@@ -100,7 +100,7 @@ body {
   }
 
   .contI { /* Contenedor que contiene la imagen/enlace y su descripción */    
-    width: 17%;
+    width: 22%;
   }
 
   .contI img { /* Imagen/enlace de la consulta */    
@@ -112,7 +112,7 @@ body {
     border: 2px solid #FFC46B;
     border-radius: 5px;
     width: 100%;    
-    font-size: 1.8vw;
+    font-size: 2.3vw;
     text-align: center;
     padding: 2vh;
   }
@@ -123,7 +123,7 @@ body {
   #titulo { /* Título de la página */    
     margin-top: 4vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3.6vw;
+    font-size: 5vw;
     font-weight: lighter;
     text-align: center;
     color: #FFCB7E;
@@ -132,11 +132,11 @@ body {
   #desc { /* Descripción de la página */    
     text-align: justify;   
     margin: 4vh 4vw;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   #subti { /* Subtítulo de la página | Precios de cada consulta */    
-    margin: 10vh 4vw;
+    margin: 5vh 4vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5vw;
     font-weight: lighter;
@@ -154,7 +154,7 @@ body {
   }
 
   .contI { /* Contenedor que contiene la imagen/enlace y su descripción */    
-    width: 17%;
+    width: 20%;
   }
 
   .contI img { /* Imagen/enlace de la consulta */    
@@ -166,7 +166,7 @@ body {
     border: 2px solid #FFC46B;
     border-radius: 5px;
     width: 100%;    
-    font-size: 1.8vw;
+    font-size: 2vw;
     text-align: center;
     padding: 2vh;
   }
@@ -279,5 +279,3 @@ body {
     padding: 2vh;
   }  
 }
-
-/* (orientation: portrait) */
